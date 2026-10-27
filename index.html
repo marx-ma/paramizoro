@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#123b55" />
+  <title>Un pequeño tesoro para ti 💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky-glow"></div>
+  <header class="topline">
+    <span>☠︎ NIKOL </span>
+    <span class="tiny-heart">♥</span>
+    <span>UN TESORO PARA TI</span>
+  </header>
+
+  <main>
+    <section class="intro intro-hero" id="intro">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">UNA CARTA QUE CRUZÓ EL MAR</p>
+        <h1>Encontré un tesoro<br><em>y me recordó a ti.</em></h1>
+        <p class="intro-copy">Hay aventuras que se sienten más bonitas cuando imagino hacerlas contigo.</p>
+        <button id="startBtn" class="main-button">Abrir este pequeño mundo <span>↗</span></button>
+        <div class="scroll-note">TOCA PARA COMENZAR </div>
+      </div>
+    </section>
+
+    <section class="world hidden" id="world" aria-label="Un pequeño mundo inspirado en One Piece">
+      <div class="sun"></div>
+      <div class="floating-cloud cloud-one"></div>
+      <div class="floating-cloud cloud-two"></div>
+      <div class="island">
+        <div class="palm">🌴</div>
+        <div class="flower flower-one">🌸</div>
+        <div class="flower flower-two">🌼</div>
+        <div class="flower flower-three">🌷</div>
+      </div>
+      <div class="ocean">
+        <div class="wave wave-a"></div><div class="wave wave-b"></div>
+        <div class="boat boat-one" title="Un barquito de aventuras">⛵</div>
+        <div class="boat boat-two" title="Otro barco rumbo al tesoro">🚢</div>
+      </div>
+      <div class="world-title">
+        <span class="eyebrow"> M   ·   N </span>
+        <h2>Yo Luffy. Tú Zoro. <span>☀️</span></h2>
+        <p>No sé cuál será nuestra próxima "Aventura", pero me gusta imaginar el momento contigo.</p>
+      </div>
+
+      <div class="treasures">
+        <button class="treasure-card" data-note="fruit">
+          <span class="treasure-art">🍈</span><strong>Fruta misteriosa</strong><small>Un poder secreto</small>
+        </button>
+        <button class="treasure-card" data-note="flower">
+          <span class="treasure-art">🌸</span><strong>Flores del camino</strong><small>Para alegrarte el día</small>
+        </button>
+        <button class="treasure-card" data-note="map">
+          <span class="treasure-art">🗺️</span><strong>Mapa del tesoro</strong><small>Una ruta por descubrir</small>
+        </button>
+        <button class="treasure-card" data-note="hat">
+          <span class="treasure-art">👒</span><strong>El sombrero</strong><small>Una promesa de aventura</small>
+        </button>
+      </div>
+
+      <section class="crew">
+        <div class="crew-copy">
+          <p class="eyebrow">MI TRIPULACIÓN FAVORITA</p>
+          <h2>Capitán de goma loquito <br><em>espadachín dormilon.</em></h2>
+          <p>Una pequeña referencia a nosotros que solo las dos entendemos</p>
+        </div>
+        <div class="crew-art" aria-label="Sombrero de paja y espadas, símbolos de Luffy y Zoro">
+          <div class="sunny-icon">⛵</div>
+          <div class="hat-icon">👒</div>
+          <div class="sword-icon">⚔️</div>
+          <div class="mini-luffy">LUFFY</div><div class="mini-zoro">ZORO</div>
+        </div>
+      </section>
+
+      <section class="letter-section">
+        <div class="chest" id="chest" role="button" tabindex="0" aria-label="Abrir cofre del tesoro">
+          <div class="chest-lid"></div><div class="chest-body">☠︎</div><div class="chest-lock">♡</div>
+        </div>
+        <p class="eyebrow">HAS ENCONTRADO EL TESORO</p>
+        <h2>¿Lo abrimos?</h2>
+        <p class="hint">Toca el cofre. Hay algo que quiero decirte.</p>
+        <button id="openChest" class="main-button">Abrir el cofre 💌</button>
+      </section>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+    <div class="letter">
+      <button class="close" id="closeLetter" aria-label="Cerrar">×</button>
+      <div class="letter-stamp">☠︎</div>
+      <p class="eyebrow">UN MENSAJE PARA MI APRENCIADO NAKAMA</p>
+      <h2 id="letterTitle">Mi tesoro bonito</h2>
+      <p id="letterText">Entre tantos momentos y personas, qué suerte que nuestros caminos se cruzaran. No necesito que este vinculo tenga un nombre perfecto; solo quería que supieras que eres alguien muy especial para mí.</p>
+      <p class="signature">Te amo🌷</p>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast" role="status"></div>
+  <footer>HECHO CON CARIÑO · PARA MI ZORO ♡</footer>
+ <audio id="backgroundMusic" autoplay loop>
+  <source src="love.mp3" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
+
+</body>
+</html>
